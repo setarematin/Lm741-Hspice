@@ -1,0 +1,25 @@
+pnlAddPane();
+nil
+1
+designOpen("C:\\Users\\Soheil\\Desktop\\lm741\\Inverting\\741_inverting.sp");
+"D0"
+t
+pnlAddCurve(1, node(D0,"A0","v(vsig)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(out)"), node(D0,"A0","TIME"));
+nil
+pnlAddPane();
+nil
+nil
+2
+pnlAddCurve(2, node(D0,"A1","vm(out)","S-1"), node(D0,"A1","HERTZ"));
+nil
+quit();
+exit
+pnlDeletePane(2, 1);
+nil
+nil
+nil
+pnlDeletePane(1, 1);
+nil
+nil
